@@ -93,7 +93,11 @@ playwright install
 ```bash
 fastapi dev main.py
 ```
+Or
 
+```bash
+uvicorn main:app --reload
+```
 ---
 
 ## Run on a Custom Port
@@ -101,11 +105,10 @@ fastapi dev main.py
 ```bash
 fastapi dev main.py --port 8001
 ```
-
 Or
 
 ```bash
-uvicorn main:app --reload
+uvicorn main:app --reload --port 8001
 ```
 
 ---
