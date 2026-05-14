@@ -78,6 +78,14 @@ uv add -r requirements.txt
 
 ---
 
+## Step6: Install Playwright
+
+```bash
+playwright install-deps
+playwright install
+```
+---
+
 # Running the Project
 
 ## Run with FastAPI Dev Server
@@ -94,17 +102,7 @@ fastapi dev main.py
 fastapi dev main.py --port 8001
 ```
 
----
-
-## Install Playwright
-
-```bash
-playwright install-deps
-playwright install
-```
----
-
-## Run with Uvicorn
+Or
 
 ```bash
 uvicorn main:app --reload
